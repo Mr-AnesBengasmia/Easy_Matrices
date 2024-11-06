@@ -12,4 +12,6 @@ var X = parseFloat(X1.value) + parseFloat(X2.value) + parseFloat(X3.value);
 var Y = parseFloat(Y1.value) + parseFloat(Y2.value) + parseFloat(Y3.value);
 var Z = parseFloat(Z1.value) + parseFloat(Z2.value) + parseFloat(Z3.value);
 
-alert("Sum of X: " + X + "\nSum of Y: " + Y + "\nSum of Z: " + Z);
+function openSoulutionPage() {
+    window.location.href = './functions/solution.html'; 
+}

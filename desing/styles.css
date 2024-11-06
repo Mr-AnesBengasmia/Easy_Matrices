@@ -1,6 +1,5 @@
 body{
-    backgound-color: #333;
-    background-image: url(./contents/background.jpg);
+    background-image: url(./contents/background.JPG);
     background-repeat: no-repeat;
     backdrop-filter: blur(1px);
     transition: transform 0.5s ease, box-shadow 0.5s ease;

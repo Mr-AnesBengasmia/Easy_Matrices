@@ -1,4 +1,5 @@
 body{
+    backgound-color: #333;
     background-image: url(./contents/background.jpg);
     background-repeat: no-repeat;
     backdrop-filter: blur(1px);

@@ -1,5 +1,5 @@
 body{
-    background-image: url(/contents/istockphoto-1219382595-612x612.jpg);
+    background-image: url(_/contents/istockphoto-1219382595-612x612.jpg);
     background-repeat: no-repeat;
     backdrop-filter: blur(1px);
     transition: transform 0.5s ease, box-shadow 0.5s ease;

@@ -46,6 +46,7 @@ input{
 .firsteq,.secondeq,.thirdeq{
     position: relative;
     display: inline-block;
+    font-size: 12px;
     -webkit-text-fill-color: rgb(0, 0, 255);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin: 5% 0 5% 0%;

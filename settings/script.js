@@ -15,3 +15,6 @@ var Z = parseFloat(Z1.value) + parseFloat(Z2.value) + parseFloat(Z3.value);
 function openSoulutionPage() {
     window.location.href = './functions/solution.html'; 
 }
+function openMainPage() {
+    window.location.href = './'; 
+}

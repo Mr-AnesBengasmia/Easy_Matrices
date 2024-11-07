@@ -16,5 +16,5 @@ function openSoulutionPage() {
     window.location.href = './functions/solution.html'; 
 }
 function openMainPage() {
-    window.location.href = './'; 
+    window.location.href = '../'; 
 }

@@ -36,6 +36,9 @@ if (isNaN(M11) || isNaN(M12) || isNaN(M13) ||
 
 var detM = ((M11 * M22 * M33) + (M12 * M23 * M31) + (M13 * M21 * M32)) -
             ((M13 * M22 * M31) + (M12 * M21 * M33) + (M11 * M23 * M32));
+            if (detM === 0) {
+                alert("Determinant is zero, cannot divide by zero.");
+                }
 
 function openSoulutionPage() {
     window.location.href = './functions/solution.html';
@@ -52,7 +55,5 @@ function openMainPage() {
     window.location.href = '../'; 
 }
 
-if (detM === 0) {
-    alert("Determinant is zero, cannot divide by zero.");
-    }
+
 

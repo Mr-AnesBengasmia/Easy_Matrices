@@ -30,26 +30,15 @@ if (isNaN(M11) || isNaN(M12) || isNaN(M13) ||
 
     isNaN(M31) || isNaN(M32) || isNaN(M33) || 
 
-    isNaN(N1) || isNaN(N2) || isNaN(N3)) {
+    isNaN(N1) || isNaN(N2) || isNaN(N3)     ) {
     alert("One or more inputs are invalid. Please enter valid numbers.");
-    return; }
+    }
 
 var detM = ((M11 * M22 * M33) + (M12 * M23 * M31) + (M13 * M21 * M32)) -
             ((M13 * M22 * M31) + (M12 * M21 * M33) + (M11 * M23 * M32));
 
 function openSoulutionPage() {
     window.location.href = './functions/solution.html';
-    showSoulutiosn(); 
-}
-function openMainPage() {
-    window.location.href = '../'; 
-}
-
-if (detM === 0) {
-    alert("Determinant is zero, cannot divide by zero.");
-    return;}
-
-function showSoulutiosn() {
     var detmtxt = document.getElementById("detm");
     var X = document.getElementById("X");
     var Y = document.getElementById("Y");
@@ -59,3 +48,11 @@ function showSoulutiosn() {
     Y.textContent = "Y = " + (N2/detM) ;
     Z.textContent = "Z = " + (N3/detM) ;
 }
+function openMainPage() {
+    window.location.href = '../'; 
+}
+
+if (detM === 0) {
+    alert("Determinant is zero, cannot divide by zero.");
+    }
+

@@ -24,33 +24,18 @@ const N1 = Number(intN1);
 const N2 = Number(intN2);
 const N3 = Number(intN3);
 
-if (isNaN(M11))
-    alert("(11) Invalid number");
-if (isNaN(M12))
-    alert("(12) Invalid number");
-if (isNaN(M13))
-    alert("(13) Invalid number");
-if (isNaN(M21))
-    alert("(21) Invalid number");
-if (isNaN(M22))
-    alert("(22) Invalid number");
-if (isNaN(M23))
-    alert("(23) Invalid number");
-if (isNaN(M31))
-    alert("(31) Invalid number");
-if (isNaN(M32))
-    alert("(32) Invalid number");
-if (isNaN(M33))
-    alert("(33) Invalid number");
-if (isNaN(N1))
-    alert("N1 Invalid number");
-if (isNaN(N2))
-    alert("N2 Invalid number");
-if (isNaN(N3))
-    alert("N3 Invalid number");
+if (isNaN(M11) || isNaN(M12) || isNaN(M13) || 
 
-var detM = ((M11*M22*M33)+(M12*M23*M31)+(M13*M21*M34))-((M11*M23*M32)+(M12*M21*M33)+(M13*M22*M31));
+    isNaN(M21) || isNaN(M22) || isNaN(M23) || 
 
+    isNaN(M31) || isNaN(M32) || isNaN(M33) || 
+
+    isNaN(N1) || isNaN(N2) || isNaN(N3)) {
+    alert("One or more inputs are invalid. Please enter valid numbers.");
+    return; }
+
+var detM = ((M11 * M22 * M33) + (M12 * M23 * M31) + (M13 * M21 * M32)) -
+            ((M13 * M22 * M31) + (M12 * M21 * M33) + (M11 * M23 * M32));
 
 function openSoulutionPage() {
     window.location.href = './functions/solution.html';
@@ -60,13 +45,17 @@ function openMainPage() {
     window.location.href = '../'; 
 }
 
+if (detM === 0) {
+    alert("Determinant is zero, cannot divide by zero.");
+    return;}
+
 function showSoulutiosn() {
     var detmtxt = document.getElementById("detm");
     var X = document.getElementById("X");
     var Y = document.getElementById("Y");
     var Z = document.getElementById("Z");
     detmtxt.textContent = "Det M = " + DetM ;
-    X.textContent = "X = " + N1/detM ;
-    Y.textContent = "Y = " + N2/detM ;
-    Z.textContent = "Z = " + N3/detM ;
+    X.textContent = "X = " + (N1/detM) ;
+    Y.textContent = "Y = " + (N2/detM) ;
+    Z.textContent = "Z = " + (N3/detM) ;
 }

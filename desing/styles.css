@@ -40,6 +40,9 @@ ul:hover {
     box-shadow: 0px 0px 20px rgb(0, 47, 255);
     transform: translateY(5px) scale(1);
 }
+input{
+    width: 50px;
+}
 .firsteq,.secondeq,.thirdeq{
     position: relative;
     display: inline-block;
